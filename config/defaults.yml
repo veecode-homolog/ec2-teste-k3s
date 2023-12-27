@@ -1,0 +1,7 @@
+---
+cluster_name: "ec2-teste-k3s"
+VPC_ID: "vpc-0a99ebce7c14dcc86"
+publicsCIDRblock: "10.0.1.0/24"
+availabilityZone: "us-east-1a"
+instance_type: "t3.medium"
+keypar: "platform_kp"

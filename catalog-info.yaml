@@ -1,0 +1,15 @@
+apiVersion: veecode.backstage.io/v1alpha1
+kind: Cluster
+metadata:
+  name: "ec2-teste-k3s"
+  environment:
+    cluster_type: ec2
+  annotations:
+    github.com/project-slug: veecode-homolog/ec2-teste-k3s
+    backstage.io/techdocs-ref: dir:.
+    github.com/workflows: terraform-deploy.yml,terraform-destroy.yml,infracost.yml
+spec:
+  type: devops
+  lifecycle: experimental
+  owner: "group:default/admin"
+  
